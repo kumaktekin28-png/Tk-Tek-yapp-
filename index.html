@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TK TEK YAPI Niğde inşaat, tadilat, anahtar teslim yapı ve dekorasyon hizmetleri.">
+<title>TK TEK YAPI | Niğde İnşaat</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#111;color:#fff}
+a{text-decoration:none;color:inherit}
+header{
+ position:sticky;top:0;z-index:10;
+ background:#151515;padding:22px 7%;
+ display:flex;justify-content:space-between;
+ align-items:center;border-bottom:1px solid #333
+}
+.logo{font-size:25px;font-weight:bold;color:#d5b477}
+nav{display:flex;gap:24px}
+nav a:hover{color:#d5b477}
+.hero{
+ min-height:620px;padding:120px 9%;
+ display:flex;flex-direction:column;
+ justify-content:center;
+ background:linear-gradient(90deg,#090909ed,#09090970),
+ url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800') center/cover
+}
+.hero small{color:#d5b477;letter-spacing:4px}
+.hero h1{font-size:clamp(40px,6vw,72px);margin:25px 0}
+.hero h1 span{color:#d5b477}
+.hero p{max-width:600px;line-height:1.8;color:#ddd}
+.btn{
+ display:inline-block;background:#d5b477;color:#111;
+ padding:16px 25px;margin-top:28px;font-weight:bold;
+ border-radius:3px
+}
+section{padding:85px 8%}
+.heading{text-align:center;margin-bottom:45px}
+.heading h2{font-size:36px;margin-bottom:12px}
+.heading p{color:#aaa}
+.services{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:20px
+}
+.service{
+ background:#1c1c1c;padding:30px;
+ border:1px solid #333;transition:.3s
+}
+.service:hover{border-color:#d5b477;transform:translateY(-5px)}
+.service h3{color:#d5b477;margin-bottom:15px}
+.service p{color:#bbb;line-height:1.7}
+.about{
+ background:#1b1b1b;text-align:center
+}
+.about p{max-width:850px;margin:20px auto;line-height:1.9;color:#ccc}
+.projects{
+ display:grid;grid-template-columns:repeat(3,1fr);gap:20px
+}
+.projects img{width:100%;height:230px;object-fit:cover}
+.project-note{color:#aaa;text-align:center;margin-top:25px}
+.contact{
+ background:#1c1c1c;text-align:center
+}
+.contact h2{font-size:38px;color:#d5b477}
+.contact p{margin-top:18px;color:#ddd}
+footer{
+ text-align:center;padding:30px;background:#080808;
+ color:#999;line-height:2
+}
+.whatsapp{
+ position:fixed;right:20px;bottom:20px;
+ background:#20b75a;color:white;padding:16px 22px;
+ border-radius:30px;font-weight:bold;z-index:20
+}
+@media(max-width:800px){
+ header{flex-wrap:wrap;gap:15px}
+ nav{width:100%;justify-content:center;flex-wrap:wrap;gap:14px}
+ .services,.projects{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+ .services,.projects{grid-template-columns:1fr}
+ .hero{min-height:540px;padding:90px 7%}
+ section{padding:65px 7%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">TK TEK YAPI</div>
+ <nav>
+  <a href="#anasayfa">Ana Sayfa</a>
+  <a href="#hizmetler">Hizmetler</a>
+  <a href="#projeler">Projeler</a>
+  <a href="#hakkimizda">Hakkımızda</a>
+  <a href="#iletisim">İletişim</a>
+ </nav>
+</header>
+
+<main>
+<section class="hero" id="anasayfa">
+ <small>NİĞDE • İNŞAAT • YAPI • DEKORASYON</small>
+ <h1>Geleceği<br><span>Sağlam İnşa Ediyoruz.</span></h1>
+ <p>TK TEK YAPI olarak inşaat, anahtar teslim projeler,
+ tadilat ve yapı uygulamalarında profesyonel çözümler sunuyoruz.</p>
+ <a class="btn" href="#iletisim">BİZİMLE İLETİŞİME GEÇİN</a>
+</section>
+
+<section id="hizmetler">
+ <div class="heading">
+  <h2>Hizmetlerimiz</h2>
+  <p>İnşaat ve yapı alanında kapsamlı çözümler</p>
+ </div>
+ <div class="services">
+  <article class="service"><h3>Anahtar Teslim İnşaat</h3><p>Konut ve bina projelerinde planlama ve uygulama.</p></article>
+  <article class="service"><h3>Kaba İnşaat</h3><p>Temel, beton, demir, kalıp ve duvar işleri.</p></article>
+  <article class="service"><h3>İnce Yapı İşleri</h3><p>Sıva, alçı, boya, seramik ve zemin kaplama.</p></article>
+  <article class="service"><h3>Tadilat ve Dekorasyon</h3><p>Ev, daire ve iş yerlerinin yenilenmesi.</p></article>
+  <article class="service"><h3>Isı ve Su Yalıtımı</h3><p>Mantolama, çatı ve su izolasyonu.</p></article>
+  <article class="service"><h3>Çatı ve Dış Cephe</h3><p>Çatı kaplama ve dış cephe uygulamaları.</p></article>
+  <article class="service"><h3>Mutfak ve Banyo</h3><p>Mutfak, banyo ve ıslak hacim yenileme.</p></article>
+  <article class="service"><h3>Elektrik ve Mekanik</h3><p>Proje kapsamına uygun tesisat uygulamaları.</p></article>
+  <article class="service"><h3>Proje Danışmanlığı</h3><p>Yapı ihtiyaçları ve uygulama süreçlerinin planlanması.</p></article>
+ </div>
+</section>
+
+<section class="about" id="hakkimizda">
+ <div class="heading"><h2>Hakkımızda</h2></div>
+ <p>TK TEK YAPI, Niğde merkezli inşaat ve yapı hizmetleri markasıdır.
+ Kaliteli işçilik, doğru planlama ve müşteri memnuniyetini
+ esas alarak yapı projelerine çözüm üretmeyi hedefler.</p>
+ <p>Her projeyi kendi ihtiyaçları doğrultusunda değerlendiriyor,
+ uygulama sürecinde detaylara önem veriyoruz.</p>
+</section>
+
+<section id="projeler">
+ <div class="heading">
+  <h2>Projelerimiz</h2>
+  <p>Niğde'de gerçekleştirdiğimiz çalışmalar</p>
+ </div>
+ <div class="projects">
+  <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700" alt="Modern yapı örneği">
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700" alt="Konut mimarisi örneği">
+  <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=700" alt="İç mekan örneği">
+ </div>
+ <p class="project-note">Görseller örnektir. Gerçek Niğde projelerinizle değiştirilecektir.</p>
+</section>
+
+<section class="contact" id="iletisim">
+ <h2>Projenizi Birlikte İnşa Edelim</h2>
+ <p>Bilgi ve teklif almak için bize ulaşın.</p>
+ <p><strong>Telefon: 0532 763 79 40</strong></p>
+ <p><strong>Adres: Niğde / Türkiye</strong></p>
+ <a class="btn" href="https://wa.me/905327637940?text=Merhaba%20TK%20TEK%20YAPI%2C%20projem%20hakkinda%20bilgi%20almak%20istiyorum." target="_blank">WHATSAPP'TAN YAZIN</a>
+</section>
+</main>
+
+<footer>
+ <strong>TK TEK YAPI</strong><br>
+ Niğde İnşaat ve Yapı Hizmetleri<br>
+ © 2026 TK TEK YAPI - Tüm hakları saklıdır.
+</footer>
+
+<a class="whatsapp" href="https://wa.me/905327637940" target="_blank">WhatsApp</a>
+
+</body>
+</html>
